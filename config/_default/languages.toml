@@ -1,0 +1,27 @@
+# Languages
+#   Create a `[X]` block for each language you want, where X is the language ID.
+#   Refer to https://sourcethemes.com/academic/docs/language/
+
+# Configure the English version of the site.
+[en]
+  languageCode = "en-us"
+  contentDir = "content/en"  # Uncomment for multi-lingual sites, and move English content into `en` sub-folder.
+
+[es]
+  languageCode = "es-ES"
+  contentDir = "content/es"
+
+  [[es.menu.main]]
+    name = "Inicio"
+    url = "#about"
+    weight = 10
+
+  [[es.menu.main]]
+    name = "Publicaciones"
+    url = "#posts"
+    weight = 20
+
+  [[es.menu.main]]
+    name = "Proyectos"
+    url = "#projects"
+    weight = 30
