@@ -1,17 +1,20 @@
-name: Updater (WIP)
+name: Jekyll site CI
 
 on:
-  schedule:
-    - cron: 30 23 * * *
   push:
-    branches:
-      - master
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
 
 jobs:
-  update:
+  build:
+
     runs-on: ubuntu-latest
+
     steps:
-      - uses: wowchemy/gh-action-updater@v1
-        with:
-          feed-url: https://wowchemy.com/blog/index.xml
-          readme-section: news
+    - uses: actions/checkout@v4
+    - name: Build the site in the jekyll/builder container
+      run: |
+        docker run \
+        -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
+        jekyll/builder:latest /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build --future"
