@@ -1,8 +1,12 @@
-# IDEs
-.idea/
+# Ignore the contents of the _site directory
+_site/
 
-# Hugo
-/resources/
-public/
-jsconfig.json
-node_modules/
+# Ignore the directory for local files during development
+local/
+
+# Ignore the Gemfile that is generated
+Gemfile.lock
+
+# Ingore files created by npm
+node_modules
+package-lock.json
