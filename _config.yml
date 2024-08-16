@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Nihat Mugurtay / Site Title"
+title                    : "Nihat Mugurtay"
 title_separator          : "-"
 name                     : &name "Nihat Mugurtay"
 description              : &description "personal description"
@@ -21,10 +21,10 @@ repository               : "nmugurtay/nmugurtay.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
-  name             : "Your Sidebar Name"
+  avatar           : "profile.jpeg"
+  name             : "Nihat Mugurtay"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
+  bio              : "Post-Doctoral Researcher at Sabanci University,  Member of VRL Lab,  International Relations "
   location         : "Earth"
   employer         : "Red Brick University"
   uri              : # URL
